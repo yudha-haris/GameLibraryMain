@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a",
+        "version" : "5.9.1"
+      }
+    },
+    {
+      "identity" : "gamelibrarycore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yudha-haris/GameLibraryCore",
+      "state" : {
+        "revision" : "da4c3fb28b269b5317bdf974b703762921fbb024",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "9cf7ef4ad8e2f4c7a519c9a395ca3d253bb87aa8",
+        "version" : "14.6.2"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "revision" : "6e0772315809ff0a11cd265126350039a6aac59d",
+        "version" : "10.50.1"
+      }
+    }
+  ],
+  "version" : 2
+}
