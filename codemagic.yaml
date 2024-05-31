@@ -2,7 +2,7 @@ workflows:
   ios-project-debug: # workflow ID
     name: iOS debug # workflow name
     environment:
-      xcode: 14.2
+      xcode: 15.0.1
       cocoapods: default
       vars:
           XCODE_PROJECT: "GameLibrary/GameLibrary.xcodeproj"
