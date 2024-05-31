@@ -3,7 +3,6 @@ workflows:
     name: iOS debug # workflow name
     environment:
       xcode: 15.0.1
-      cocoapods: default
       vars:
           XCODE_PROJECT: "GameLibrary/GameLibrary.xcodeproj"
           XCODE_SCHEME: "GameLibrary"
@@ -14,7 +13,7 @@ workflows:
           -project "$XCODE_PROJECT" \
           -scheme "$XCODE_SCHEME" \
           -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 15 Pro Max,OS=17.0' \
+          -destination 'platform=iOS Simulator,name=iPhone 15 Pro Max,OS=17.0.1' \
           clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Build debug app
         script: |
