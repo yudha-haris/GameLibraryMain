@@ -8,9 +8,6 @@ workflows:
           XCODE_PROJECT: "GameLibrary/GameLibrary.xcodeproj"
           XCODE_SCHEME: "GameLibrary"
     scripts:
-      - name: Install dependencies
-        script: |
-          pod install
       - name: Clean derived data
         script: |
           rm -rf $HOME/Library/Developer/Xcode/DerivedData
