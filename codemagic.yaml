@@ -6,7 +6,8 @@ workflows:
       cocoapods: default
       vars:
           XCODE_PROJECT: "GameLibrary/GameLibrary.xcodeproj"
-          XCODE_SCHEME: "GameLibrary/GameLibrary"
+          XCODE_WORKSPACE : "GameLibrary/GameLibrary.xcworkspace"
+          XCODE_SCHEME: "GameLibrary"
     scripts:
       - name: Clean derived data
         script: |
