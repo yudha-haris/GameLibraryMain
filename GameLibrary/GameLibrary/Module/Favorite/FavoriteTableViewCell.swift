@@ -29,7 +29,7 @@ class FavoriteTableViewCell: UITableViewCell {
     
     func bind(_ game: GameModel) {
         self.gameTitle.text = game.name
-        self.gameRating.text = "rating_score".localized().replacingOccurrences(of: "%@", with: "\(game.rating)")
+        self.gameRating.text = String(format: NSLocalizedString("rating_score", comment: ""), "\(game.rating)")
         self.gameReleaseDate.text = CustomDateFormatter.toMMMdYYYY(date: game.released)
         self.gameImage.image = game.image
     }

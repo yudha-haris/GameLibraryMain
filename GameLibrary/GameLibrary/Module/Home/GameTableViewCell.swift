@@ -30,7 +30,7 @@ class GameTableViewCell: UITableViewCell {
     
     func bind(_ game: GameModel, _ indexPath: IndexPath, completion: @escaping (GameModel) -> Void) {
         gameTitle.text = game.name
-        gameRating.text = "rating_score".localized().replacingOccurrences(of: "%@", with: "\(game.rating)")
+        gameRating.text = String(format: NSLocalizedString("rating_score", comment: ""), "\(game.rating)")
         gameReleaseDate.text = CustomDateFormatter.toMMMdYYYY(date: game.released)
         gameImage.image = game.image
         

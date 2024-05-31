@@ -53,7 +53,7 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindPresenter()
+        loadGame()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,11 +70,15 @@ class DetailViewController: UIViewController {
         loadingIndicator.isHidden = false
         loadingIndicator.startAnimating()
         
+        bindPresenter()
+    }
+    
+    private func bindPresenter() {
         presenter?.getGame(id)
         presenter?.getFavoriteGame(id)
     }
     
-    private func bindPresenter() {
+    private func loadGame() {
         presenter?.game
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] result in
@@ -90,7 +94,7 @@ class DetailViewController: UIViewController {
                     guard let game = game else { return }
                     
                     self.gameTitle.text = game.name
-                    self.gameRating.text = "Rated \(game.rating)/5"
+                    self.gameRating.text = String(format: NSLocalizedString("rating_score", comment: ""), "\(game.rating)")
                     self.gameReleaseDate.text = CustomDateFormatter.toMMMdYYYY(date: game.released)
                     self.gameDescription.text = game.description
                     self.gameDescription.isHidden = false

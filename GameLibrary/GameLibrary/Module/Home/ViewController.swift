@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         gameTableView.dataSource = self
         gameTableView.register(UINib(nibName: "GameTableViewCell", bundle: nil), forCellReuseIdentifier: tableViewCellIdentifier)
         
-        bindPresenter()
+        loadGame()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,10 +54,10 @@ class ViewController: UIViewController {
         loadingIndicator.isHidden = false
         loadingIndicator.startAnimating()
         
-        presenter?.getGames()
+        bindPresenter()
     }
     
-    private func bindPresenter() {
+    private func loadGame() {
         presenter?.games
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] result in
@@ -75,6 +75,10 @@ class ViewController: UIViewController {
                     self.errorLabel.text = error.localizedDescription
                 }
             }).disposed(by: disposeBag)
+    }
+    
+    private func bindPresenter() {
+        presenter?.getGames()
     }
 }
 

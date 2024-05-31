@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emg-Ua-wCp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emg-Ua-wCp">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,8 +24,8 @@
                                 <rect key="frame" x="0.0" y="404" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jaringan Bermasalah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-su-61X">
-                                <rect key="frame" x="117.00000000000001" y="103" width="159.33333333333337" height="715"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jaringan Bermasalah" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-su-61X">
+                                <rect key="frame" x="16" y="103" width="361" height="715"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,9 +36,12 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xZs-rQ-vEs" secondAttribute="bottom" id="7OC-60-mrc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xZs-rQ-vEs" secondAttribute="trailing" id="Alk-7U-EDP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8bl-su-61X" secondAttribute="trailing" constant="16" id="BeH-AZ-vgf"/>
                             <constraint firstItem="xZs-rQ-vEs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FV0-wv-lnD"/>
                             <constraint firstItem="8bl-su-61X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FxN-Nm-olv"/>
                             <constraint firstItem="xZs-rQ-vEs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PfL-5a-ULi"/>
+                            <constraint firstItem="8bl-su-61X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aWl-yn-m9S"/>
+                            <constraint firstItem="8bl-su-61X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bci-QE-7HW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8bl-su-61X" secondAttribute="bottom" id="rPM-VA-NwC"/>
                             <constraint firstItem="8bl-su-61X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zzY-HD-BgC"/>
                         </constraints>
@@ -125,7 +128,7 @@
                                                     <constraint firstAttribute="height" constant="240" id="YQF-Gi-MLS"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG4-1n-8Zp">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG4-1n-8Zp">
                                                 <rect key="frame" x="16" y="247.99999999999997" width="361" height="28.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <nil key="textColor"/>
