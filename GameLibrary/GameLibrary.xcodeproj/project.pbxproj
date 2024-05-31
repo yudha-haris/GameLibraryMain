@@ -43,7 +43,6 @@
 		D9767D112BFBC9740065BA22 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9767D102BFBC9740065BA22 /* DetailViewController.swift */; };
 		D9C451B72C086B7D00AB78F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9C451B92C086B7D00AB78F8 /* Localizable.strings */; };
 		D9C451BD2C08702000AB78F8 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C451BC2C08702000AB78F8 /* String+Localization.swift */; };
-		D9C451BF2C087D8200AB78F8 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = D9C451BE2C087D8200AB78F8 /* codemagic.yaml */; };
 		D9E9FA9C2C039AB4009B1333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9767C9F2BFAFC4C0065BA22 /* Main.storyboard */; };
 		D9E9FA9F2C039E7B009B1333 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = D9E9FA9E2C039E7B009B1333 /* Detail */; };
 		D9E9FAA22C042C01009B1333 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = D9E9FAA12C042C01009B1333 /* Home */; };
@@ -117,7 +116,6 @@
 		D9C451B82C086B7D00AB78F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D9C451BA2C086B7E00AB78F8 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D9C451BC2C08702000AB78F8 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
-		D9C451BE2C087D8200AB78F8 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		D9FD3EEF2C096D5200433B71 /* GameLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FD3F022C096EC300433B71 /* FavoritePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +166,6 @@
 		D9767C8D2BFAFC4C0065BA22 = {
 			isa = PBXGroup;
 			children = (
-				D9C451BE2C087D8200AB78F8 /* codemagic.yaml */,
 				D9767C982BFAFC4C0065BA22 /* GameLibrary */,
 				D9FD3EF02C096D5200433B71 /* GameLibraryTests */,
 				D9767C972BFAFC4C0065BA22 /* Products */,
@@ -420,7 +417,6 @@
 				D9767CA62BFAFC4D0065BA22 /* Base in Resources */,
 				D93FDCB82BFC9CC5003F557D /* FavoriteTableViewCell.xib in Resources */,
 				D9767D032BFB55FD0065BA22 /* GameTableViewCell.xib in Resources */,
-				D9C451BF2C087D8200AB78F8 /* codemagic.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
