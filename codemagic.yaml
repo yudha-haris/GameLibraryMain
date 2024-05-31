@@ -7,22 +7,24 @@ workflows:
           XCODE_PROJECT: "GameLibrary/GameLibrary.xcodeproj"
           XCODE_SCHEME: "GameLibrary"
     scripts:
-#      - name: Run tests
-#        script: |
-#          xcodebuild \
-#          -project "$XCODE_PROJECT" \
-#          -scheme "$XCODE_SCHEME" \
-#          -sdk iphonesimulator \
-#          -destination 'platform=iOS Simulator,name=iPhone 15 Pro Max,OS=17.0.1' \
-#          clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - name: Clean derived data
+        script: |
+          rm -rf $HOME/Library/Developer/Xcode/DerivedData
+      - name: Resolve SPM dependencies
+        script: |
+          xcodebuild -resolvePackageDependencies -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME"
       - name: Build debug app
         script: |
-          xcodebuild build -project "$XCODE_PROJECT" \
+          xcodebuild build \
+          -project "$XCODE_PROJECT" \
           -scheme "$XCODE_SCHEME" \
-          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_ALLOWED=NO \
+          -verbose
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
     publishing:
       email:
         recipients:
-          - yudha.pieters@gmail.com # Isikan email untuk notifikasi status building.
+          - yudha.pieters@gmail.com
