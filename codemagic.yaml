@@ -1,12 +1,12 @@
 workflows:
-  ios-project-debug: # workflow ID
-    name: iOS debug # workflow name
+  ios-project-debug:
+    name: iOS debug
     environment:
       xcode: latest
       cocoapods: default
       vars:
           XCODE_PROJECT: "GameLibrary/GameLibrary.xcodeproj"
-          XCODE_SCHEME: "GameLibrary"
+          XCODE_SCHEME: "GameLibrary/GameLibrary"
     scripts:
       - name: Clean derived data
         script: |
