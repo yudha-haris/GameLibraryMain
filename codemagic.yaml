@@ -5,6 +5,7 @@ workflows:
       xcode: 15.0.1
       vars:
           XCODE_PROJECT: "GameLibrary/GameLibrary.xcodeproj"
+          XCODE_WORKSPACE: "GameLibrary/GameLibrary.xcworkspace"
           XCODE_SCHEME: "GameLibrary"
     scripts:
 #      - name: Run tests
@@ -17,7 +18,7 @@ workflows:
 #          clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Build debug app
         script: |
-          xcodebuild build -project "$XCODE_PROJECT" \
+          xcodebuild clean build -workspace "$XCODE_WORKSPACE" \
           -scheme "$XCODE_SCHEME" \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     artifacts:
