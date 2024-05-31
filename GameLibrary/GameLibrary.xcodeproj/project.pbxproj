@@ -32,6 +32,7 @@
 		D9767D032BFB55FD0065BA22 /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9767D012BFB55FD0065BA22 /* GameTableViewCell.xib */; };
 		D9767D0F2BFBC79F0065BA22 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9767D0E2BFBC79F0065BA22 /* DetailPresenter.swift */; };
 		D9767D112BFBC9740065BA22 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9767D102BFBC9740065BA22 /* DetailViewController.swift */; };
+		D9A00C5D2C0A500F007B1E8F /* RAWRIO-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9A00C5C2C0A500F007B1E8F /* RAWRIO-Info.plist */; };
 		D9C451B72C086B7D00AB78F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9C451B92C086B7D00AB78F8 /* Localizable.strings */; };
 		D9C451BD2C08702000AB78F8 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C451BC2C08702000AB78F8 /* String+Localization.swift */; };
 		D9E9FA9C2C039AB4009B1333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9767C9F2BFAFC4C0065BA22 /* Main.storyboard */; };
@@ -98,6 +99,7 @@
 		D9767D012BFB55FD0065BA22 /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 		D9767D0E2BFBC79F0065BA22 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		D9767D102BFBC9740065BA22 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D9A00C5C2C0A500F007B1E8F /* RAWRIO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAWRIO-Info.plist"; sourceTree = "<group>"; };
 		D9C451B32C0858BE00AB78F8 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
 		D9C451B42C0858BF00AB78F8 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D9C451B82C086B7D00AB78F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		D9767C8D2BFAFC4C0065BA22 = {
 			isa = PBXGroup;
 			children = (
+				D9A00C5C2C0A500F007B1E8F /* RAWRIO-Info.plist */,
 				D9767C982BFAFC4C0065BA22 /* GameLibrary */,
 				D9FD3EF02C096D5200433B71 /* GameLibraryTests */,
 				D9767C972BFAFC4C0065BA22 /* Products */,
@@ -389,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9767CA32BFAFC4D0065BA22 /* Assets.xcassets in Resources */,
+				D9A00C5D2C0A500F007B1E8F /* RAWRIO-Info.plist in Resources */,
 				D9C451B72C086B7D00AB78F8 /* Localizable.strings in Resources */,
 				D9E9FA9C2C039AB4009B1333 /* Main.storyboard in Resources */,
 				D9767CA62BFAFC4D0065BA22 /* Base in Resources */,

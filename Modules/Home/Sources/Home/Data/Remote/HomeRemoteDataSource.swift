@@ -23,7 +23,7 @@ extension HomeRemoteDataSource: HomeRemoteDataSourceProtocol {
         guard let url = URL(string: HomeEndpoints.Gets.games.url) else { return }
         
         let parameters: [String: String] = [
-            "key": HomeAPI.apiKey
+            "key": HomeAPI.apiKey ?? ""
         ]
         
         AF.request(url, parameters: parameters)

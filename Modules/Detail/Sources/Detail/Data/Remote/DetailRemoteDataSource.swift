@@ -20,7 +20,7 @@ public class DetailRemoteDataSource: DetailRemoteDataSourceProtocol {
         guard let url = URL(string: "\(DetailEndpoints.Gets.game.url)\(id)") else { return }
         
         let parameters: [String: String] = [
-            "key": DetailAPI.apiKey
+            "key": DetailAPI.apiKey ?? ""
         ]
         
         AF.request(url, parameters: parameters)

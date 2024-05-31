@@ -9,9 +9,11 @@ import Foundation
 
 import Foundation
 
+let filePath = Bundle.main.path(forResource: "RAWRIO-Info", ofType: "plist")
+
 struct HomeAPI {
     public static let baseUrl = "https://api.rawg.io/api/"
-    public static let apiKey = ""
+    public static let apiKey = NSDictionary(contentsOfFile: filePath ?? "")?.object(forKey: "API_KEY") as? String
 }
 
 protocol HomeEndpoint {
