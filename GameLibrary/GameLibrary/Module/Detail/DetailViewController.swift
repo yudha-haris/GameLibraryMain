@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var imageLoadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var favoriteButton: UIBarButtonItem!
+    @IBOutlet weak var titleFrame: UIView!
     
     // IBAction
     @IBAction func favoriteButtonAction(_ sender: Any) {
@@ -70,6 +71,9 @@ class DetailViewController: UIViewController {
         loadingIndicator.isHidden = false
         loadingIndicator.startAnimating()
         
+        titleFrame.layer.cornerRadius = 16
+        titleFrame.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
         bindPresenter()
     }
     
@@ -94,7 +98,7 @@ class DetailViewController: UIViewController {
                     guard let game = game else { return }
                     
                     self.gameTitle.text = game.name
-                    self.gameRating.text = String(format: NSLocalizedString("rating_score", comment: ""), "\(game.rating)")
+                    self.gameRating.text = game.rating.toRating()
                     self.gameReleaseDate.text = CustomDateFormatter.toMMMdYYYY(date: game.released)
                     self.gameDescription.text = game.description
                     self.gameDescription.isHidden = false

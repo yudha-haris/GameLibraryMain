@@ -32,6 +32,8 @@
 		D9767D032BFB55FD0065BA22 /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9767D012BFB55FD0065BA22 /* GameTableViewCell.xib */; };
 		D9767D0F2BFBC79F0065BA22 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9767D0E2BFBC79F0065BA22 /* DetailPresenter.swift */; };
 		D9767D112BFBC9740065BA22 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9767D102BFBC9740065BA22 /* DetailViewController.swift */; };
+		D9814F582C0F2833000F31E2 /* Float+Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9814F572C0F2833000F31E2 /* Float+Rating.swift */; };
+		D9A00C602C0A5DD1007B1E8F /* RAWRIO-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9A00C5C2C0A500F007B1E8F /* RAWRIO-Info.plist */; };
 		D9C451B72C086B7D00AB78F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9C451B92C086B7D00AB78F8 /* Localizable.strings */; };
 		D9C451BD2C08702000AB78F8 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C451BC2C08702000AB78F8 /* String+Localization.swift */; };
 		D9E9FA9C2C039AB4009B1333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9767C9F2BFAFC4C0065BA22 /* Main.storyboard */; };
@@ -98,6 +100,7 @@
 		D9767D012BFB55FD0065BA22 /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 		D9767D0E2BFBC79F0065BA22 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		D9767D102BFBC9740065BA22 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D9814F572C0F2833000F31E2 /* Float+Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Rating.swift"; sourceTree = "<group>"; };
 		D9A00C5C2C0A500F007B1E8F /* RAWRIO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAWRIO-Info.plist"; sourceTree = "<group>"; };
 		D9C451B32C0858BE00AB78F8 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
 		D9C451B42C0858BF00AB78F8 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -253,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				D9C451BC2C08702000AB78F8 /* String+Localization.swift */,
+				D9814F572C0F2833000F31E2 /* Float+Rating.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -390,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A00C602C0A5DD1007B1E8F /* RAWRIO-Info.plist in Resources */,
 				D9767CA32BFAFC4D0065BA22 /* Assets.xcassets in Resources */,
 				D9C451B72C086B7D00AB78F8 /* Localizable.strings in Resources */,
 				D9E9FA9C2C039AB4009B1333 /* Main.storyboard in Resources */,
@@ -422,6 +427,7 @@
 				D9767D022BFB55FD0065BA22 /* GameTableViewCell.swift in Sources */,
 				D9767CB42BFAFCCB0065BA22 /* Injection.swift in Sources */,
 				D9767D112BFBC9740065BA22 /* DetailViewController.swift in Sources */,
+				D9814F582C0F2833000F31E2 /* Float+Rating.swift in Sources */,
 				D93FDCAE2BFC7B2B003F557D /* FavoritePresenter.swift in Sources */,
 				D9767C9A2BFAFC4C0065BA22 /* AppDelegate.swift in Sources */,
 				D93FDCB92BFC9CC5003F557D /* FavoriteTableViewCell.swift in Sources */,
